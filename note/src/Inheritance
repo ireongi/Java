@@ -1,0 +1,19 @@
+
+relationship(클래스 간의 관계)
+
+  - inheritance 상속(is-a)
+    : ex)나는 학생이다.
+      protected 접근으로 getter setter 없이 사용가능, 코드 중복방지, 가독성 좋음, 재사용성 but 강한 결속력으로 유연성 낮춤
+      but 보통 public만 쓰고 지정 안할경우 private로 설정됨
+
+  - association 연관(has-a & is related to) - 사람마다 다르게 정의할 수 있음
+    : ex) 조립된 컴퓨터, 여러 신체부위로 구성된 인간
+      aggregation 소유(집합관계, 컴퓨터 조립 so 각 클래스의 수명이 다름) ex)moniter has a (is related to) computer
+                     외부에서 만들어 결합, composition보다 약함
+      composition 구성(구성관계, 사람 죽으면 모든 세포 다 죽음) ex)사람 죽을때 눈 코 입 다 작동 안됨
+                     내부에서 만들어 결합, 강한 결합관계, 죽을때도 다 같이 죽음
+
+  - dependency 의존(uses-a)
+    : ex) 보험기간
+      쓰고 버림, 클래스 안에 다른 클래스를 매개변수로 줄 때, 수정이 용이함
+      가장 약한 결합관계
