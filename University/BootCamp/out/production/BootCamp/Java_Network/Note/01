@@ -1,8 +1,8 @@
 2/13(월)
 
 "Network addressing using the InetAddress class"
-    Unicast : one address
-    Multicast : more than one address
+    Unicast : one address / 1: 1 소통
+    Multicast : more than one address / 단톡방 소통(타겟이 정해져 있음)
 
     InetAddress class : static get type methods
     URL(Uniform Recource Locator)
@@ -25,8 +25,8 @@
                    ex) 하나의 채널에 여러개 동작되도록
 
 
-    TCP : 정해진 프로토콜 안에서~~?
-    UDP : 같은 네트워크 안에서~~?
+    TCP : 정해진 프로토콜
+    UDP : 같은 프로토콜
 
 
         URL url = new;
