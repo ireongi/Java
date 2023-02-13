@@ -1,0 +1,44 @@
+2/13(월)
+
+"Network addressing using the InetAddress class"
+    Unicast : one address
+    Multicast : more than one address
+
+    InetAddress class : static get type methods
+    URL(Uniform Recource Locator)
+
+        InetAddress address = InetAddress.getByName("www.~~")
+
+
+"NIO support" (New In Out)
+    channel  : This represents a stream of data between applications
+               1) File
+               2) Datagram
+               3) Socket
+
+    Buffer   : This works with a channel to process data
+               임시 저장공간
+               ex) 놀이기구 대기줄 막아둔 철장(미리 담아뒀다가 열어서 보냄) 물탱크, 정화시설, 댐
+
+    Selector : This is a technology that allows a single thread to handle multiple channels
+               ex) 하나의 채널에 여러개 동작되도록
+
+
+    TCP : 정해진 프로토콜 안에서~~?
+    UDP : 같은 네트워크 안에서~~?
+
+
+        URL url = new;
+        URL("www.~");
+        URLConnection urlConnection = url.openConnection();
+        BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+
+        br에 html 모든 값들 다 담음
+
+
+"Error 상태코드"
+    1xx() :
+    2xx() :
+    3xx(302 리다이렉션) :
+    4xx() :
+    5xx() :

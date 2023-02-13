@@ -1,0 +1,11 @@
+2/13(월)
+
+"Network addressing using the InetAddress class"
+
+    Unicast : one address
+    Multicast : more than one address
+
+    InetAddress class : static get type methods
+    URL(Uniform Recource Locator)
+
+        InetAddress address = InetAddress.getByName("www.~~")
