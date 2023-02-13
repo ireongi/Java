@@ -3,10 +3,8 @@ package Java_Network.D01;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.UnknownHostException;
 import java.nio.charset.MalformedInputException;
 
 public class _StreamReader {
@@ -21,7 +19,7 @@ public class _StreamReader {
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
-            br.close(); //닫아주기
+            br.close(); // try 구문 닫아주기 -> try(필요 내용){}하면 close 필요 x
         } catch (MalformedInputException e) {
             throw  new RuntimeException(e);
         } catch (IOException ex){

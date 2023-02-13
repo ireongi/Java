@@ -11,17 +11,18 @@
 
 
 "NIO support" (New In Out)
-    channel  : This represents a stream of data between applications
-               1) File
-               2) Datagram
-               3) Socket
+    1) channel  : This represents a stream of data between applications
+                  1) File
+                  2) Datagram
+                  3) Socket
 
-    Buffer   : This works with a channel to process data
-               임시 저장공간
-               ex) 놀이기구 대기줄 막아둔 철장(미리 담아뒀다가 열어서 보냄) 물탱크, 정화시설, 댐
+   2)  Buffer   : This works with a channel to process data 임시 저장공간
+                  (귀) Buffered Reader & getInputStream / (입) PrintWriter & getOutputStream
+                                   받고 & 인풋            /              쓰고 & 아웃
+                  ex) 놀이기구 대기줄 막아둔 철장(미리 담아뒀다가 열어서 보냄) 물탱크, 정화시설, 댐
 
-    Selector : This is a technology that allows a single thread to handle multiple channels
-               ex) 하나의 채널에 여러개 동작되도록
+   3)  Selector : This is a technology that allows a single thread to handle multiple channels
+                   ex) 하나의 채널에 여러개 동작되도록
 
 
     TCP : 정해진 프로토콜 안에서~~?
@@ -36,9 +37,10 @@
         br에 html 모든 값들 다 담음
 
 
-"Error 상태코드"
-    1xx() :
-    2xx() :
-    3xx(302 리다이렉션) :
-    4xx() :
-    5xx() :
+"try ~ catch"
+    try{} 대신 try(){}하면 ()에 try에 필요한 내용이 들어가면 try구문 끝나면 자동으로 close (close 구문이 필요없음)
+
+"Socket clientSocket = serverSocket.accept();"
+    접속하기 전 대기 -> 클라이언트 접속하면 clientSocket에 그 내용이 들어옴
+
+Buffer full x -> flush x   =>  강제로 비우거나 full ->  flush o   =>  empty
