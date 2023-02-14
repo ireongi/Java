@@ -1,5 +1,5 @@
 // IP 주소 구하기
-package Java_Network.D01;
+package Java_Network.D01_UniCast_TCP;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

@@ -3,7 +3,7 @@ package Java_Network.Note;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class StringDemo{
+public class Note {
     public static void main(String[] args) {
         String[] strings = {"Hello friend professor1", "Hi", "Hello friend", "Hello friend professor2"};
 

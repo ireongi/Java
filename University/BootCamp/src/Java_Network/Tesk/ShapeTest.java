@@ -51,8 +51,7 @@ public class ShapeTest {
     static List<Shape> findShapes2(List<Shape> shapes, Predicate<Shape> p){
         List<Shape> result = new ArrayList<>();
 
-        // p = Predicate.isEqual(shapes);
-        //Consumer<Shape> s = t -> { ;};
+        Predicate<String> s = Predicate.isEqual("빨간색");
 
         return result;
     }

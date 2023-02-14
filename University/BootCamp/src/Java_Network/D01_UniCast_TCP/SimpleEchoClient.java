@@ -1,4 +1,7 @@
-package Java_Network.D01;
+// 1) 그냥 소켓 생성
+// 2)
+// 3)
+package Java_Network.D01_UniCast_TCP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
