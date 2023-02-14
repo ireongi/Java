@@ -1,4 +1,4 @@
-package Java_Basic;
+package Java_Basic.Day01.inheritance;
 
 class Person
 {

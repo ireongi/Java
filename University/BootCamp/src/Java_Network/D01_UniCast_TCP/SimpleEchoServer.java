@@ -34,7 +34,7 @@ public class SimpleEchoServer {
             } finally {
                 {
 //                    br.close();
-//                    out.close(); try(){} -> try{} 일때 세트 (모던 스타일 코드)
+//                    out.close(); try(){} -> try{} 일때 세트 (클래식 코드)
                 }
             }
         } catch (IOException ex) {  // Handle exceptions
