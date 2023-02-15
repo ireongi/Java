@@ -1,8 +1,6 @@
-package Java_Network.Tesk;
+package Java_Network.Tesk.Lambda;
 
 import java.util.*;
-import java.util.function.BinaryOperator;
-import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class ShapeTest {

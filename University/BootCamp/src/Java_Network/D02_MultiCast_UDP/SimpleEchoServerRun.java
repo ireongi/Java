@@ -12,10 +12,11 @@ import java.util.concurrent.Executors;
 public class SimpleEchoServerRun implements Runnable {
     // 다중 접속 에코 서버
     private static Socket clientSocket;
-    public SimpleEchoServerRun(Socket clientSocket)
-    {
+
+    public SimpleEchoServerRun(Socket clientSocket) {
         this.clientSocket = clientSocket;
     }
+
     public static void main(String[] args) {
         ExecutorService eService = Executors.newFixedThreadPool(5);  // 5 threads
         System.out.println("다중 접속 에코 서버");
@@ -43,12 +44,12 @@ public class SimpleEchoServerRun implements Runnable {
         ) {
             String inputLine;
             while ((inputLine = br.readLine()) != null) {
-                System.out.println(Thread.currentThread() +" 클라이언트가 보낸 메세지 : " + inputLine);
+                System.out.println(Thread.currentThread() + " 클라이언트가 보낸 메세지 : " + inputLine);
                 out.println(inputLine);
             }
-            System.out.println(Thread.currentThread() +" 클라이언트가 종료됨"); }
-        catch (IOException ex)
-        {
+            System.out.println(Thread.currentThread() + " 클라이언트가 종료됨");
+        } catch (IOException ex) {
             System.out.println("입출력 예외 발생!");
         }
     }
+}

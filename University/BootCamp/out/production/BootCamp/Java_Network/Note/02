@@ -9,3 +9,6 @@ Socket
 
 
 Functional Interface : Supplier
+
+
+DNS(Domain Name System)  : ip, domain 주소를 mapping
