@@ -1,9 +1,0 @@
-2/16(목) NIO
-
-동기식 : 1개 보내고 1개 받음
-비동기식 : 계속 보내기(받는것과 상관없이) - 버퍼가 필요함(계속 보내서 버퍼링 걸림)
-
-Buffer   : This holds information that is read or written to a channel
-Channel  : This is a stream-like technique that supports asynchronous read/write operations to a data source/sink
-Selector :
-
