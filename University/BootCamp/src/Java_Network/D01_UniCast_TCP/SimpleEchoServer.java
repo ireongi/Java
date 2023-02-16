@@ -22,7 +22,7 @@ public class SimpleEchoServer {
             System.out.println("Connected to client");
             try (BufferedReader br = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                  PrintWriter pw = new PrintWriter(clientSocket.getOutputStream(), true)) // 받고 & 출력
-                                                                                    // autoFlush buffer를 자동으로 비움
+            // autoFlush buffer를 자동으로 비움
             {
                 String inputLine; // 한줄씩 받아 출력
                 while ((inputLine = br.readLine()) != null) {
