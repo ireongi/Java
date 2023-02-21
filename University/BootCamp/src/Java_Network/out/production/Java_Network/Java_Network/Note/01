@@ -1,0 +1,46 @@
+2/13(월)
+
+"Network addressing using the InetAddress class"
+    Unicast : one address / 1: 1 소통
+    Multicast : more than one address / 단톡방 소통(타겟이 정해져 있음)
+
+    InetAddress class : static get type methods
+    URL(Uniform Recource Locator)
+
+        InetAddress address = InetAddress.getByName("www.~~")
+
+
+"NIO support" (New In Out)
+    1) channel  : This represents a stream of data between applications
+                  1) File
+                  2) Datagram
+                  3) Socket
+
+   2)  Buffer   : This works with a channel to process data 임시 저장공간
+                  (귀) Buffered Reader & getInputStream / (입) PrintWriter & getOutputStream
+                                   받고 & 인풋            /              쓰고 & 아웃
+                  ex) 놀이기구 대기줄 막아둔 철장(미리 담아뒀다가 열어서 보냄) 물탱크, 정화시설, 댐
+
+   3)  Selector : This is a technology that allows a single thread to handle multiple channels
+                   ex) 하나의 채널에 여러개 동작되도록
+
+
+    TCP : 정해진 프로토콜
+    UDP : 같은 프로토콜
+
+
+        URL url = new;
+        URL("www.~");
+        URLConnection urlConnection = url.openConnection();
+        BufferedReader br = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
+
+        br에 html 모든 값들 다 담음
+
+
+"try ~ catch"
+    try{} 대신 try(){}하면 ()에 try에 필요한 내용이 들어가면 try구문 끝나면 자동으로 close (close 구문이 필요없음)
+
+"Socket clientSocket = serverSocket.accept();"
+    접속하기 전 대기 -> 클라이언트 접속하면 clientSocket에 그 내용이 들어옴
+
+Buffer full x -> flush x   =>  강제로 비우거나 full ->  flush o   =>  empty
