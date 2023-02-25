@@ -1,7 +1,7 @@
-package GUI;
-
 // Frame : 애플리케이션을 위한 창 생성 & 타이틀과 메뉴 지원 & 보더와 시스템 상자(최소.최대화.닫기 버튼) 제공
 //         java.awt.Frame 상속받은 자식클래스임(WindowConstants, Accessible, RootPaneContainer 인터페이스 구현)
+
+package GUI;
 
 import javax.swing.*;
 
