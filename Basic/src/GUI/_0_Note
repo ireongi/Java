@@ -1,0 +1,42 @@
+
+GUI Programing
+
+1) Graphic : carve 또는 scratch 라는 의미의 graph 에서 파생된 단어\
+
+2) 사용자 <-> 시스템 상호작용 방식
+   1 CUI : Character User Interface,
+           장점(Text 기반이라 빠름) 단점(명령어 숙지, 시스템에 대한 이해도 필요)
+   2 GUI : Graphic User Interface
+           장점(아이콘이나 메큐로 프로그램 실행 so 직관적) 단점(초창기 컴퓨터 성능이 안 좋을때는 CUI가 더 유용했음 but 지금은 대부분 GUI 를 사용)
+
+3-1) Component
+     GUI 작성 기본 빌딩 블록(버튼, 레이블, 텍스트 필드 등 )
+     사용자 인터페이스를 생성하는 객체
+     윈도우 시스템에서는 Control 이라고 함
+
+3-2) Container
+     컴포넌트를 부착하는 특수한 컴포넌트
+     컨터이너 대표적 클래스(버튼 or 레이블 등 컴포넌트를 부착할 수 있는 프레임이나 패널 등)
+     모든 GUI 애플리케이션은 최소 1개의 컨테이너를 포함해야 (그 컨테이너에 부착한)컴포넌트들을 화면에 표시할 수 있음
+
+4) JAVA GUI 구현 기능
+   1 JFC(Java Foundation Classes)
+        AWT(Abstract Windo Toolkit)
+        : 운영체제가 체공하는 네이티브 UI 컴포넌트를 이용하는 자바 라이브러리(인터넷 활성화 되기 전 많이 사용)
+        Swing (= lightweight component 경량)
+        : 운영체제가 제공하는 컴포넌트에서 독립한 순수 자바 GUI 컴포넌트(모든 운영체제에서 동일한 look and feel 을 갖음)
+          모든 스윙 컴포넌트는 AWT 컴포넌트와 완전 호환되도록 작성됨 & AWT에 없는 풍부한 고급 컴포넌트도 추가됨
+          스윙 컴포넌트의 이름은 모두 J로 시작함(AWT 와 구분)
+        Java 2D
+        Drag & drop
+   2 JavaFX
+        Layout, Style, Logic 분리할 수 있음
+        swing 보다 가벼워 모바일 어플 개발에 적합 but 안드로이드의 API 가 더 인기 많음
+
+5) Swing
+   1 Look and Feel
+   2 풍선 도움말
+   3 더블 버퍼링
+   4 MVC 모델
+   5 이미지 아이콘
+   6 보더

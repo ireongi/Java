@@ -3,9 +3,9 @@ package GUI;
 import javax.swing.*;
 import java.awt.*;
 
-public class _1_FlowLayout extends JFrame{
+public class _4_FlowLayout extends JFrame{
 
-        _1_FlowLayout(){
+        _4_FlowLayout(){
             setTitle("Flow Layout");
 
             JPanel j = new JPanel(new FlowLayout()); // new FlowLayout() 생략 가능 - JPanel의 기본 배치 방식
@@ -28,7 +28,7 @@ public class _1_FlowLayout extends JFrame{
         }
 
         public static void main(String[] args) {
-            new _1_FlowLayout();
+            new _4_FlowLayout();
         }
     }
 
